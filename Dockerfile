@@ -1,4 +1,4 @@
-pull official base image
+# pull official base image
 FROM node:15.0.0-alpine
 
 # set working directory
