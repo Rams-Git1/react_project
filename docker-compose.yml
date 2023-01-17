@@ -1,9 +1,12 @@
 version: '3.7'
+
 services:
-  myreact:
-    container_name: myreact
+
+  sample:
+    container_name: sample
+    image: myreact-${TYPE}:${TAG}
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:3000"
+      - "3000:3000"
